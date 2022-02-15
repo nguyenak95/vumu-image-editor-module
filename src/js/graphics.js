@@ -826,6 +826,7 @@ class Graphics {
    */
   setSelectionStyle(styles) {
     extend(fObjectOptions.SELECTION_STYLE, styles);
+    extend(fObjectOptions.LOGO_STYLE, styles);
   }
 
   /**
@@ -1090,6 +1091,7 @@ class Graphics {
     const centerPos = this.getCanvasImage().getCenterPoint();
 
     obj.set(fObjectOptions.SELECTION_STYLE);
+    console.log(fObjectOptions.SELECTION_STYLE);
     obj.set({
       left: centerPos.x,
       top: centerPos.y,
